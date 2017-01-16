@@ -2,11 +2,6 @@ app.controller('viewCtrl', function(books, $scope, $location){
 
 	$scope.books = books.get();
 
-	// $http.get('api/books').then(function(response){
-	// 	$scope.books = response.data;
-	// 	console.log($scope.books)
-	// });
-
 	$scope.showBook = function(bookID){
 		$location.url('/book/' + bookID)
 	}
@@ -51,4 +46,26 @@ app.controller('viewCtrl', function(books, $scope, $location){
 	    $scope.newBook.$update();
 		$location.url('/book/' + $routeParams.id);
 	}
+})
+
+.controller('navCtrl', function($scope, $location){
+    $scope.isActive = function(viewLocation) {
+        return viewLocation === $location.path();
+    };
+    $scope.navItems = [{
+        "name": "Home",
+        "patch": "/"
+    },{
+        "name": "About",
+        "patch": "/about"
+    },{
+        "name": "Example 1",
+        "patch": "/#"
+    },{
+        "name": "Example 2",
+        "patch": "/#"
+    },{
+        "name": "Contact",
+        "patch": "/#"
+    }];
 });

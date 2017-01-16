@@ -12,10 +12,25 @@
         <h1><a href="#/">CRUD Library</a></h1>
         <p><a href="#/">Create Read Update Delete</a></p>
     </header>
-    <nav>
+
+    <nav ng-controller="navCtrl">
         <ul>
-            <li><a href="#/">Home</a></li>
-            <li><a href="#/about">About</a></li>
+            <li ng-class="{ active: isActive('/')}">
+                <a href="#!/">Home</a>
+            </li>
+            <li ng-class="{ active: isActive('/about')}">
+                <a href="#!/about">About</a>
+            </li>
+            <li>
+                <a href="">Example 1</a>
+            </li>
+            <li>
+                <a href="">Example 2</a>
+            </li>
+            <li class="spacer" aria-hidden="true"></li>
+            <li>
+                <a href="http://google.com/">google.com</a>
+            </li>
         </ul>
     </nav>
 
@@ -25,12 +40,12 @@
         Copyright &copy; gumbulix 2016.
     </footer>
 </div>
-<a href="#/add" class="addBtn">+</a>
+<a href="#!/add" class="addBtn">+</a>
 
 
-<script type="text/javascript" src="js/lib/angular.min.js"></script>
-<script type="text/javascript" src="js/lib/angular-route.min.js"></script>
-<script type="text/javascript" src="js/lib/angular-resource.min.js"></script>
+<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="node_modules/angular-resource/angular-resource.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/route.js"></script>
 <script type="text/javascript" src="js/service.js"></script>
