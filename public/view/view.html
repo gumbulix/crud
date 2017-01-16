@@ -1,0 +1,23 @@
+<section>
+	<table>
+		<thead>
+			<tr>
+				<th></th>
+				<th>Title</th>
+				<th>Author</th>
+				<th>Options</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="book in books track by $index">
+				<td>{{books.indexOf(book) + 1}}</td>
+				<td>{{book.title}}</td>
+				<td>{{book.author}}</td>
+				<td class="center">
+					<button ng-click="showBook(book.id)">Select</button>
+					<button ng-click="editBook(book.id)">Edit</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</section>

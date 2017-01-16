@@ -1,0 +1,184 @@
+.wrapper {
+	margin: 0 auto;
+	max-width: 800px;
+	font-family: verdana, sans-serif;
+}
+
+.center {
+	text-align: center;
+}
+
+/*Header*/
+
+header {
+	background: #0268BF;
+	margin: 0;
+	padding: 10px 40px;
+	text-decoration: none;
+}
+header a{
+	text-decoration: none;
+	color: white;
+}
+
+header p {
+	margin-top: -15px;
+}
+
+
+/*Nav*/
+
+nav {
+	background-color: #014782;
+	margin: -16px 0;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+}
+
+nav li {
+	display: inline-block;
+	padding: 10px;
+	transition: all 0.3s;
+}
+
+nav li:hover {
+	background-color: #0158A1;
+}
+
+
+/*Footer*/
+
+footer {
+	margin-bottom: 0px;
+	padding: 15px;
+	background-color: #E8E8E8;
+	text-align: center;
+	font-size: 12px;
+	color: #3E3D40;
+}
+
+
+/*Section*/
+
+section {
+	display: block;
+	position: relative;	 	
+	background-color: #F6F6F6;
+	padding: 20px;
+	margin: 0;
+	border-bottom: 2px solid #e0e0e0;
+}
+
+section img {
+	float: left;
+	width: 22%;
+	margin: 0 10px 0 0;
+	border-radius: 2px;
+}	
+
+section .title {
+	font-size: 25px;
+}
+
+section .author {
+	font-size: 20px;
+}
+
+
+/*Button*/
+
+button {
+	display: inline-block;
+	background-color: #3E3D40;
+	padding: 10px;
+	border: none;
+	border-radius: 2px;
+	text-decoration: none;
+	color: white;
+	transition: all 0.2s;
+}
+
+button:hover {
+	background-color: #303030;
+}
+
+button:active {
+	background-color: #282828;
+}
+
+/*Input*/
+
+input, textarea {
+	display: block;
+	margin-bottom: 15px;
+	min-width: 630px;
+	padding: 10px;
+
+	border-radius: 2px;
+	border: none;
+
+	font-size: 14px;
+}
+
+textarea {
+	min-height: 200px;
+}
+
+
+/*addBtn*/
+.addBtn {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	padding: 0 13px;
+	border-radius: 100%;
+	background-color: #00B837;
+	z-index: 2;
+
+	color: white;
+	text-decoration: none;
+	font-style: oblique;
+	font-size: 3.5em;
+
+	box-shadow: 2px 2px 20px -2px rgba(0,0,0,0.75);
+	transition: all 0.2s;
+	transform: scale(0.8);
+}
+
+.addBtn:hover {
+	background-color: #00942C;
+}
+
+/*Option Buttons*/
+
+.deleteBtn {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+}
+
+.editBtn {
+	position: absolute;
+	right: 80px;
+	top: 20px;
+}
+
+/*Table*/
+table {
+	width: 100%;
+}
+
+td {
+	padding: 5px;
+}
+
+thead th {
+	border-bottom: 3px solid #e0e0e0;
+}
+
+tbody td{
+	border-bottom: 1px solid #e0e0e0;
+}
